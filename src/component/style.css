@@ -1,3 +1,61 @@
-*{
-    background: linear-gradient(90deg, rgba(42,42,43,1) 0%, rgba(83,85,85,1) 35%, rgba(213,208,213,1) 100%);
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Josefin+Sans:wght@100&family=Noto+Sans+Mono&family=Oswald:wght@500&family=Rubik+Bubbles&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
+
+/* about page style */
+.about {
+    display: grid;
+    padding: 2rem;
+    grid-template-columns: 300px 1fr;
+    gap: 7rem;
+    align-items: center;
+    max-width: 100%;
+    max-height: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    font: 500 100%/1.5 system-ui;
+    background-color: black;
+    color: white;
 }
+
+@media (max-width: 900px) {
+    .about {
+        
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+
+    .my-img {
+
+        margin: 0 0 -100px;
+    }
+}
+
+.aboutMeText {
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Noto Sans Mono', monospace;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Rubik Bubbles', cursive;
+}
+
+.about-p-tag {
+    font-weight: bolder;
+    font-size: 20px;
+    font-family: 'Playfair Display', serif;
+}
+
+.logo-git-lin{
+    text-align: center;
+    padding-top: 5vh;
+    
+}
+.logoColor{
+    color: white;
+}
+.logoColor:hover{
+    color: white;
+    opacity: 0.6;
+}
+/* .................................................. */
