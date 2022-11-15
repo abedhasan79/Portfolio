@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Josefin+Sans:wght@100&family=Noto+Sans+Mono&family=Oswald:wght@500&family=Rubik+Bubbles&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
 
+
 /* about page style */
 .about {
     display: grid;
@@ -13,49 +14,114 @@
     height: 100vh;
     margin: 0 auto;
     font: 500 100%/1.5 system-ui;
-    background-color: black;
-    color: white;
+    /* background-color: black; */
+    background: radial-gradient(circle, rgb(10, 10, 10) 85%, rgb(9, 5, 19) 45%, rgb(80, 72, 82) 100%);
+
+    color: rgb(0, 130, 139);
+
 }
-
-@media (max-width: 900px) {
-    .about {
-        
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-
-    }
-
-    .my-img {
-
-        margin: 0 0 -100px;
-    }
-}
-
 .aboutMeText {
     font-family: 'Dancing Script', cursive;
     font-family: 'Josefin Sans', sans-serif;
     font-family: 'Noto Sans Mono', monospace;
     font-family: 'Oswald', sans-serif;
     font-family: 'Rubik Bubbles', cursive;
+    color: white;
+
 }
 
+.textAbout {
+    box-shadow: inset 0px 0px 20px rgb(32, 24, 24);
+}
+
+
+
+.logo-git-lin {
+    text-align: center;
+    padding-top: 5vh;
+
+}
+
+.logoColor {
+    color: white;
+}
+
+.logoColor:hover {
+    color: white;
+    opacity: 0.6;
+}
 .about-p-tag {
     font-weight: bolder;
     font-size: 20px;
     font-family: 'Playfair Display', serif;
 }
+@media (max-width: 900px) {
+    .about {
+        height: 100vh;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
 
-.logo-git-lin{
-    text-align: center;
-    padding-top: 5vh;
-    
+    }
+    .myImg{
+        height: 200px;
+        width: 200px;
+        
+    }
+    .my-img {
+
+        margin: 0 0 -200px;
+    }
+    .about-p-tag {
+        font-size: 15px;
+    }
 }
-.logoColor{
-    color: white;
-}
-.logoColor:hover{
-    color: white;
-    opacity: 0.6;
-}
+
+
+
 /* .................................................. */
+
+/* homepage style */
+
+
+
+.homepage {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    max-width: 100%;
+    max-height: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    font: 500 100%/1.5 system-ui;
+    /* background-color: rgb(0, 0, 0); */
+    background: radial-gradient(circle, rgb(10, 10, 10) 0%, rgb(9, 5, 19) 45%, rgb(80, 72, 82) 100%);
+    color: white;
+    text-align: center;
+}
+
+.myName {
+    font-size: 4vh;
+}
+
+.nameLetterAH {
+    font-size: 8vh;
+}
+
+.nameLetter:hover {
+    color: rgb(139, 0, 0);
+    font-size: 6vh;
+    transition: 0.4s;
+}
+
+.nameDiv {
+    margin-bottom: 5vh;
+}
+
+.skillsList{
+    font-size: 3vh;
+    color:rgb(139, 0, 0);
+}
+/*  ........................ */

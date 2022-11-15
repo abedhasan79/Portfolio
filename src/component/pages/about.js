@@ -1,6 +1,6 @@
 import React from "react";
-import profileImg from './images/profile-pic.jpg'
-import './style.css'
+import profileImg from '../images/profile-pic.jpg'
+import '../style.css'
 const styles = {
     mainCard: {
         display: 'flex',
@@ -9,7 +9,7 @@ const styles = {
     },
 
     img: {
-        height: '400px',
+        maxHeight: '400px',
         maxWidth: '400px',
         borderRadius: '200px'
     },
@@ -23,12 +23,12 @@ export default function about() {
     return (
         <div className="about">
             <div className="my-img">
-                <img src={profileImg} alt="Profile visual of creator" style={styles.img} />
+                <img  src={profileImg} alt="Profile visual of creator" style={styles.img} className="myImg"/>
             </div>
 
             <div >
                 <div className="text-center">
-                    <h2 className="aboutMeText">About Me</h2>
+                    <h2 className="aboutMeText"><span className="textAbout">About Me</span></h2>
                 </div>
                 <div>
                     <p className="about-p-tag">Full Stack Web Developer with a background in Applied
