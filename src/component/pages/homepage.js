@@ -1,7 +1,7 @@
 import React from "react";
 import '../style.css'
 import Typical from "react-typical";
-
+import { motion } from "framer-motion";
 
 const skills = ['HTML', 500, 'CSS', 500, 'JavaScript', 500,
     'JQuery', 500, 'Bootstrap', 500, 'Server Side Api', 500,
@@ -28,27 +28,33 @@ const skills = ['HTML', 500, 'CSS', 500, 'JavaScript', 500,
 export default function homepage() {
 
     return (
-        <div className="homepage" >
-            <div>
-                <h2>Hi There! </h2>
-                <div className="nameDiv">
-                    <h2>I'M <span className="myName">
-                        <span className="nameLetter nameLetterAH">A</span><span className="nameLetter">B</span><span className="nameLetter">E</span><span className="nameLetter">D</span>
-                        <span className="nameLetter nameLetterAH"> H</span><span className="nameLetter">A</span><span className="nameLetter">S</span><span className="nameLetter">A</span><span className="nameLetter">N</span>
-                    </span></h2>
+        <motion.div className="homeAnimate"
+            initial={{x:-1100}}
+            animate={{x:0}}
+            transition={{   type:'spring', stiffness:20 }}
+        >
+            <div className="homepage" >
+                <div>
+                    <h2>Hi There! </h2>
+                    <div className="nameDiv">
+                        <h2>I'M <span className="myName">
+                            <span className="nameLetter nameLetterAH">A</span><span className="nameLetter">B</span><span className="nameLetter">E</span><span className="nameLetter">D</span>
+                            <span className="nameLetter nameLetterAH"> H</span><span className="nameLetter">A</span><span className="nameLetter">S</span><span className="nameLetter">A</span><span className="nameLetter">N</span>
+                        </span></h2>
+                    </div>
+                    <h2 className="">|Full Stack Web Developer|</h2>
+
+                    <span className="skillsList">
+                        <Typical
+                            steps={skills}
+                            loop={Infinity}
+                            wrapper="p"
+                        />
+                    </span>
+
                 </div>
-                <h2 className="">|Full Stack Web Developer|</h2>
-                
-                <span className="skillsList">
-                    <Typical
-                        steps={skills}
-                        loop={Infinity}
-                        wrapper="p"
-                    />
-                </span>
 
             </div>
-
-        </div>
+        </motion.div>
     );
 };

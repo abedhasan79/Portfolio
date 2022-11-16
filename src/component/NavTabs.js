@@ -1,18 +1,30 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 function NavTabs({ currentPage, handlePageChange }) {
     return (
-        <ul className="nav nav-tabs">
-            <li className="nav-item">
+        <ul className="nav ">
+            <motion.li className="nav-item"
+                whileTap={{ x: 10 }}
+            >
+
                 <a
                     href="#home"
-                    onClick={() => handlePageChange('Home')}
+                    onClick={() => {
+                        handlePageChange('Home');
+
+                    }}
                     className={currentPage === 'Home' ? 'nav-link active' : 'nav-link'}
                 >
                     Home
                 </a>
-            </li>
-            <li className="nav-item">
+
+            </motion.li>
+
+            <motion.li className="nav-item"
+                whileTap={{ x: 10 }}
+            >
+
                 <a
                     href="#about"
                     onClick={() => handlePageChange('About')}
@@ -21,8 +33,13 @@ function NavTabs({ currentPage, handlePageChange }) {
                 >
                     About
                 </a>
-            </li>
-            <li className="nav-item">
+
+            </motion.li>
+
+            <motion.li className="nav-item"
+                whileTap={{ x: 10 }}
+            >
+
                 <a
                     href="#project"
                     onClick={() => handlePageChange('Project')}
@@ -31,8 +48,12 @@ function NavTabs({ currentPage, handlePageChange }) {
                 >
                     Projects
                 </a>
-            </li>
-            <li className="nav-item">
+
+            </motion.li>
+            <motion.li className="nav-item"
+                whileTap={{ x: 10 }}
+            >
+
                 <a
                     href="#contact"
 
@@ -41,7 +62,8 @@ function NavTabs({ currentPage, handlePageChange }) {
                 >
                     Contact
                 </a>
-            </li>
+
+            </motion.li>
         </ul>
     );
 }

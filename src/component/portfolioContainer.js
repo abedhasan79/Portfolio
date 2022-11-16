@@ -6,27 +6,29 @@ import Projects from './pages/projectpage'
 import Contact from './pages/contactpage'
 
 export default function PortfolioContainer() {
-  const [currentPage, setCurrentPage] = useState('Home');
+    const [currentPage, setCurrentPage] = useState('Home');
 
-  const renderPage = () => {
-    if (currentPage === 'Home') {
-      return <Homepage />;
-    }
-    if (currentPage === 'About') {
-      return <About />;
-    }
-    if (currentPage === 'Project') {
-      return <Projects />;
-    }
-    return <Contact />;
-  };
+    const renderPage = () => {
+        if (currentPage === 'Home') {
+            return <Homepage />;
+        }
+        if (currentPage === 'About') {
+            return <About />;
+        }
+        if (currentPage === 'Project') {
+            return <Projects />;
+        }
+        return <Contact />;
+    };
 
-  const handlePageChange = (page) => setCurrentPage(page);
+    const handlePageChange = (page) => setCurrentPage(page);
 
-  return (
-    <div>
-      <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
-      {renderPage()}
-    </div>
-  );
+    return (
+        <div className='navBar '>
+
+            <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
+
+            {renderPage()}
+        </div>
+    );
 }
