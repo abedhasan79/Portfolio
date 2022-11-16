@@ -1,10 +1,8 @@
 import React from "react";
-import About from './component/pages/about'
-import Homepage from './component/pages/homepage'
+import PortfolioContainer from './component/portfolioContainer';
 function App() {
   return <div>
-    <Homepage/>
-    <About/>
+    <PortfolioContainer/>
   </div>
 }
 

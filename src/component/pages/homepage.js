@@ -37,17 +37,15 @@ export default function homepage() {
                         <span className="nameLetter nameLetterAH"> H</span><span className="nameLetter">A</span><span className="nameLetter">S</span><span className="nameLetter">A</span><span className="nameLetter">N</span>
                     </span></h2>
                 </div>
-                <h2 className="">Full Stack Web Developer|</h2>
-                <p>Skills include:{' '}
-                    <span className="skillsList">
-                        <Typical
-                            steps={skills}
-                            loop={Infinity}
-                            wrapper="p"
-                        />
-                    </span>
-
-                </p>
+                <h2 className="">|Full Stack Web Developer|</h2>
+                
+                <span className="skillsList">
+                    <Typical
+                        steps={skills}
+                        loop={Infinity}
+                        wrapper="p"
+                    />
+                </span>
 
             </div>
 
