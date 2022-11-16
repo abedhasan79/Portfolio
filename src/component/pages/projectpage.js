@@ -7,9 +7,9 @@ export default function projectPage() {
         <motion.div className="homeAnimate"
             initial={{ x: -1100 }}
             animate={{ x: 0 }}
-            transition={{ type: 'spring', stiffness: 20 }}
+            transition={{ type:'keyframes' }}
         >
-            <div>
+            <div className="about">
                 Hellow
             </div>
         </motion.div>
