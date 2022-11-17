@@ -38,9 +38,13 @@ export default function about() {
                         <h2 className="aboutMeText"><span className="textAbout">About Me</span></h2>
                     </div>
                     <div>
-                        <AnimatedText 
+                        <AnimatedText
+                            type='words'
+                            interval={0.05}
+                            duration={0.08}
                             animation={{
                               ease: 'ease-in-out',
+                              scale: -5,
                             }}
                             className="about-p-tag"
                             
@@ -59,7 +63,7 @@ export default function about() {
                             attention to detail no matter the complexity of the
                             project.
                         </AnimatedText>
-                        
+                    
                     </div>
                     <div className="logo-git-lin">
                         <a href="https://github.com/abedhasan79" className="logoColor"><i className="fa fa-github" style={styles.icon}></i></a>

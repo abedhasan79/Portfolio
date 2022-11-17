@@ -21,7 +21,7 @@
     /* background-color: black; */
     background: linear-gradient(rgb(8, 8, 8) 10%, rgb(36, 37, 36) 45%, rgb(27, 5, 5) 100%);
 
-    color: rgb(189, 172, 192);
+    color: rgb(207, 204, 207);
     box-shadow: inset 10px 10px 40px rgb(71, 42, 42);
     border-radius: 10px;
 }
@@ -59,7 +59,7 @@
 
 .about-p-tag {
     /* font-weight: bolder; */
-    font-size: 18px;
+    font-size: 19px;
     font-family: 'Playfair Display', serif;
 }
 
