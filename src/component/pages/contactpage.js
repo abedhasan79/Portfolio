@@ -14,16 +14,16 @@ export default function contactPage() {
         <motion.div className="homeAnimate"
             initial={{ x: -1100 }}
             animate={{ x: 0 }}
-            transition={{ type:'keyframes' }}
+            transition={{ type: 'keyframes' }}
         >
             <div className="contact">
                 <div className="contactInfo">
                     <h2>Contact Me:</h2>
-                    <h5>Email: abedhasan79@gmail.com</h5>
-                    <h5>Phone: +1 204-807-3955</h5>
-                    <div className="logo-git-lin-contact">
-                        <a href="https://www.linkedin.com/in/abed-hasan-965497222/" className="logoColor"><i className="fa fa-linkedin-square" style={styles.icon}></i></a>
-                    </div>
+                    <h6>Email: abedhasan79@gmail.com</h6>
+                    <h6>Phone: +1 204-807-3955</h6>
+
+                    <a href="https://www.linkedin.com/in/abed-hasan-965497222/" className="logoColor logo-git-lin-contact"><i className="fa fa-linkedin-square" style={styles.icon}></i></a>
+
                 </div>
                 <div className="container mt-5 ">
                     <form className="formContact">

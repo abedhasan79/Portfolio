@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Josefin+Sans:wght@100&family=Noto+Sans+Mono&family=Oswald:wght@500&family=Rubik+Bubbles&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
 
+#root {
+    background: url('./images/backimg2.jpg');
+
+}
 
 /* about page style */
 .about {
@@ -9,17 +13,19 @@
     grid-template-columns: 300px 1fr;
     gap: 7rem;
     align-items: center;
-    max-width: 100%;
-    max-height: 100%;
-    height: 95.3vh;
+    max-width: 80%;
+    max-height: 70%;
+    height: 89.8vh;
     margin: 0 auto;
     font: 500 100%/1.5 system-ui;
     /* background-color: black; */
-    background: linear-gradient( rgb(8, 8, 8) 10%, rgb(36, 37, 36) 45%, rgb(27, 5, 5) 100%);
+    background: linear-gradient(rgb(8, 8, 8) 10%, rgb(36, 37, 36) 45%, rgb(27, 5, 5) 100%);
 
-    color: rgb(0, 130, 139);
-
+    color: rgb(82, 219, 178);
+    box-shadow: inset 10px 10px 40px rgb(71, 42, 42);
+    border-radius: 10px;
 }
+
 .aboutMeText {
     font-family: 'Dancing Script', cursive;
     font-family: 'Josefin Sans', sans-serif;
@@ -50,28 +56,38 @@
     color: white;
     opacity: 0.6;
 }
+
 .about-p-tag {
     font-weight: bolder;
     font-size: 20px;
     font-family: 'Playfair Display', serif;
 }
+
+.myImg {
+    box-shadow: 10px 10px 10px rgb(78, 78, 75);
+}
+
 @media (max-width: 900px) {
     .about {
-        height: 100vh;
+
+        height: 105vh;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
 
     }
-    .myImg{
+
+    .myImg {
         height: 200px;
         width: 200px;
-        
+
     }
+
     .my-img {
 
         margin: 0 0 -200px;
     }
+
     .about-p-tag {
         font-size: 15px;
     }
@@ -91,15 +107,17 @@
     justify-content: center;
     align-items: center;
     padding: 2rem;
-    max-width: 100%;
-    max-height: 100%;
-    height: 95.3vh;
+    max-width: 50%;
+    max-height: 50%;
+    height: 89.8vh;
     margin: 0 auto;
     font: 500 100%/1.5 system-ui;
     /* background-color: rgb(0, 0, 0); */
-    background: linear-gradient( rgb(8, 8, 8) 10%, rgb(36, 37, 36) 45%, rgb(27, 5, 5) 100%);
+    background: linear-gradient(rgb(8, 8, 8) 10%, rgb(36, 37, 36) 45%, rgb(27, 5, 5) 100%);
     color: white;
     text-align: center;
+    box-shadow: inset 10px 10px 40px rgb(59, 42, 71);
+    border-radius: 10px;
 }
 
 .myName {
@@ -120,10 +138,11 @@
     margin-bottom: 5vh;
 }
 
-.skillsList{
+.skillsList {
     font-size: 3vh;
-    color:rgb(139, 0, 0);
+    color: rgb(139, 0, 0);
 }
+
 /*  ........................ */
 
 
@@ -135,18 +154,20 @@
     grid-template-columns: 300px 1fr;
     gap: 7rem;
     align-items: center;
-    max-width: 100%;
-    max-height: 100%;
-    height: 95.3vh;
+    max-width: 70%;
+    max-height: 70%;
+    height: 89.8vh;
     margin: 0 auto;
     font: 500 100%/1.5 system-ui;
     /* background-color: black; */
-    background: linear-gradient( rgb(8, 8, 8) 10%, rgb(36, 37, 36) 45%, rgb(27, 5, 5) 100%);
+    background: linear-gradient(rgb(8, 8, 8) 10%, rgb(36, 37, 36) 45%, rgb(27, 5, 5) 100%);
 
     color: rgb(0, 130, 139);
-
+    box-shadow: inset 10px 10px 40px rgb(42, 65, 71);
+    border-radius: 5px;
 }
-.logo-git-lin-contact{
+
+.logo-git-lin-contact {
     text-align: center;
 }
 
@@ -156,55 +177,61 @@
 .formContact textarea{
     max-width: 600px;
 } */
-.formContact button{
-    background-color:rgb(139, 0, 0);
-    
-}
-.frmbtn{
-    text-align: center;
-}
-.contactInfo h2{
-    color:rgb(139, 0, 0);
+.formContact button {
+    background-color: rgb(139, 0, 0);
+
 }
 
-.formContact{
-    width: 50%;
+.frmbtn {
+    text-align: center;
 }
+
+.contactInfo h2 {
+    color: rgb(139, 0, 0);
+}
+
+/* .formContact {
+    width: 50%;
+} */
+
 @media (max-width: 950px) {
     .contact {
         height: 100vh;
-        gap: 0rem;
+
         display: block;
         /* flex-wrap: wrap;
         justify-content: center; */
     }
-    
+
 }
+
 /* .................. */
 
 /* navbar */
-.navBar{
-    background: linear-gradient( rgb(8, 8, 8) 10%, rgb(36, 37, 36) 45%, rgb(27, 5, 5) 100%);
+/* .navBar {
+    background: linear-gradient(rgb(8, 8, 8) 10%, rgb(36, 37, 36) 45%, rgb(27, 5, 5) 100%);
+} */
 
-
-}
-.navBar ul li a{
+.navBar ul li a {
     color: rgb(250, 250, 250);
     font-size: 2vh;
 }
-.navBar ul li a:hover{
+
+.navBar ul li a:hover {
     color: rgb(247, 73, 73);
 }
+
 .active {
-    background: linear-gradient( rgb(141, 119, 119) 10%, rgb(68, 60, 60) 45%, rgb(0, 0, 0) 100%);
+    background: linear-gradient(rgb(141, 119, 119) 10%, rgb(68, 60, 60) 45%, rgb(0, 0, 0) 100%);
     border-radius: 20px;
 }
 
-.nav > .nav-item > .active { 
-    color: rgb(247, 73, 73); 
-    
+.nav>.nav-item>.active {
+    color: rgb(247, 73, 73);
+
 }
-.nav{
+
+.nav {
     display: flex;
     justify-content: flex-end;
     padding-right: 100px;
@@ -212,4 +239,135 @@
 }
 
 
+
 /* .......... */
+
+/* project page */
+.project {
+    display: grid;
+    padding: 5rem;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    align-items: center;
+    max-width: 80%;
+    max-height: 80%;
+    height: 89.8vh;
+    margin: 0 auto;
+    font: 500 100%/1.5 system-ui;
+    /* background-color: black; */
+    background: linear-gradient(rgb(8, 8, 8) 10%, rgb(36, 37, 36) 45%, rgb(27, 5, 5) 100%);
+    text-align: center;
+    color: rgb(248, 255, 255);
+
+    box-shadow: inset 10px 10px 40px rgb(87, 86, 86);
+    border-radius: 10px;
+
+}
+
+.projectImgs {
+    width: 300px;
+    height: 300px;
+}
+
+.imgContainer {
+    position: relative;
+}
+
+.projectImgs {
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    box-shadow: 10px 10px 10px rgb(77, 77, 78);
+    border-radius: 80px;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.imgContainer:hover .projectImgs {
+    opacity: 0.3;
+}
+
+.imgContainer:hover .middle {
+    opacity: 1;
+}
+
+@media (max-width: 1240px) {
+    .project {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        height: fit-content;
+    }
+
+}
+
+/* ..... */
+
+/* footer */
+.footer {
+    margin-top: -3vh;
+
+}
+
+/* .... */
+
+/* resume page */
+
+.resumepage {
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; */
+    padding: 4rem;
+    max-width: 50%;
+    max-height: 50%;
+    height: 89.8vh;
+    margin: 0 auto;
+    font-size: 17px;
+    /* background-color: rgb(0, 0, 0); */
+    background: linear-gradient(rgb(8, 8, 8) 10%, rgb(36, 37, 36) 45%, rgb(27, 5, 5) 100%);
+    color: rgb(194, 115, 115);
+    /* text-align: center; */
+    box-shadow: inset 7px 7px 20px rgb(69, 136, 175);
+    border-radius: 10px;
+}
+
+.resDown h2 {
+    font-size: 20px;
+}
+
+.resDown a {
+    padding-left: 70px;
+    padding-right: 70px;
+    align-items: center;
+}
+
+.proficiency {
+    margin-top: 6vh;
+}
+
+.profText {
+    color: rgb(0, 162, 255);
+    font-size: 25px;
+}
+
+@media (max-width: 678px) {
+    .resumepage {
+        max-width: 70%;
+        /* max-height: 60%; */
+        height: max-content;
+
+    }
+
+}
+
+/* ............. */

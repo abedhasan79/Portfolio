@@ -4,7 +4,15 @@ import About from './pages/about'
 import Homepage from './pages/homepage'
 import Projects from './pages/projectpage'
 import Contact from './pages/contactpage'
+import Resume from './pages/resumepage'
+const styles = {
 
+    icon: {
+        fontSize: '30px',
+        marginRight: '2vh',
+    },
+
+};
 export default function PortfolioContainer() {
     const [currentPage, setCurrentPage] = useState('Home');
 
@@ -18,7 +26,10 @@ export default function PortfolioContainer() {
         if (currentPage === 'Project') {
             return <Projects />;
         }
-        return <Contact />;
+        if (currentPage === 'Contact') {
+            return <Contact />;
+        }
+        return <Resume />;
     };
 
     const handlePageChange = (page) => setCurrentPage(page);
@@ -27,8 +38,14 @@ export default function PortfolioContainer() {
         <div className='navBar '>
 
             <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
-
             {renderPage()}
+            <footer className="logo-git-lin footer">
+
+                <a href="https://github.com/abedhasan79" className="logoColor"><i className="fa fa-github" style={styles.icon}></i></a>
+                <a href="https://www.linkedin.com/in/abed-hasan-965497222/" className="logoColor"><i className="fa fa-linkedin-square" style={styles.icon}></i></a>
+                <a href="https://www.instagram.com/abed9390/" className="logoColor"><i className="fa fa-instagram" style={styles.icon}></i></a>
+
+            </footer>
         </div>
     );
 }

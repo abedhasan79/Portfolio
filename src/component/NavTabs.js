@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 function NavTabs({ currentPage, handlePageChange }) {
     return (
         <ul className="nav ">
+           
             <motion.li className="nav-item"
                 whileTap={{ x: 10 }}
             >
@@ -61,6 +62,21 @@ function NavTabs({ currentPage, handlePageChange }) {
                     className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}
                 >
                     Contact
+                </a>
+
+            </motion.li>
+
+            <motion.li className="nav-item"
+                whileTap={{ x: 10 }}
+            >
+
+                <a
+                    href="#resume"
+
+                    onClick={() => handlePageChange('Resume')}
+                    className={currentPage === 'Resume' ? 'nav-link active' : 'nav-link'}
+                >
+                    Resume
                 </a>
 
             </motion.li>
