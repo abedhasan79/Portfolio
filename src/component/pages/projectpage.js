@@ -26,9 +26,9 @@ export default function projectPage() {
         >
             <div className="project">
                 <motion.div className="imgContainer"
-                    initial={{ x: 1000, y: 1000 }}
-                    animate={{ x: 0, y: 0 }}
-                    transition={{delay:0.5, duration:0.5}}
+                    initial={{ x: -1700 }}
+                    animate={{ x: 0 }}
+                    transition={{delay:0.4, duration:0.5}}
                     whileHover={{ x: 10, y: 10 }}
                 >
                     <img className="projectImgs" src={projectTwo} alt="project"></img>
@@ -40,9 +40,9 @@ export default function projectPage() {
                 </motion.div>
 
                 <motion.div className="imgContainer"
-                    initial={{ x: 1000, y: 1000 }}
-                    animate={{ x: 0, y: 0 }}
-                    transition={{delay:0.7, duration:0.5}}
+                    initial={{ x: -1700 }}
+                    animate={{ x: 0 }}
+                    transition={{delay:0.6, duration:0.5}}
                     whileHover={{ x: 10, y: 10 }}
                 >
                     <img className="projectImgs" src={projectOne} alt="project"></img>
@@ -54,9 +54,9 @@ export default function projectPage() {
                 </motion.div>
 
                 <motion.div className="imgContainer"
-                    initial={{ x: 1000, y: 1000 }}
-                    animate={{ x: 0, y: 0 }}
-                    transition={{delay:0.9, duration:0.5}}
+                    initial={{ x: -1700 }}
+                    animate={{ x: 0 }}
+                    transition={{delay:0.8, duration:0.5}}
                     whileHover={{ x: 10, y: 10 }}
                 >
                     <img className="projectImgs" src={projectThree} alt="project"></img>
@@ -68,9 +68,9 @@ export default function projectPage() {
                 </motion.div>
 
                 <motion.div className="imgContainer"
-                    initial={{ x: 800, y: 800 }}
-                    animate={{ x: 0, y: 0 }}
-                    transition={{delay:1.1, duration:0.5}}
+                    initial={{ x: -1700 }}
+                    animate={{ x: 0 }}
+                    transition={{delay:1, duration:0.5}}
                     whileHover={{ x: 10, y: 10 }}
                 >
                     <img className="projectImgs" src={projectFour} alt="project"></img>
@@ -82,9 +82,9 @@ export default function projectPage() {
                 </motion.div>
 
                 <motion.div className="imgContainer"
-                    initial={{ x: 800, y: 800 }}
-                    animate={{ x: 0, y: 0 }}
-                    transition={{delay:1.3, duration:0.5}}
+                    initial={{ x: -1700}}
+                    animate={{ x: 0}}
+                    transition={{delay:1.2, duration:0.5}}
                     whileHover={{ x: 10, y: 10 }}
                 >
                     <img className="projectImgs" src={projectFive} alt="project"></img>
@@ -96,9 +96,9 @@ export default function projectPage() {
                 </motion.div>
 
                 <motion.div className="imgContainer"
-                    initial={{ x: 800, y: 800 }}
-                    animate={{ x: 0, y: 0 }}
-                    transition={{delay:1.5, duration:0.5}}
+                    initial={{ x: -1700 }}
+                    animate={{ x: 0 }}
+                    transition={{delay:1.4, duration:0.5}}
                     whileHover={{ x: 10, y: 10 }}
                 >
                     <img className="projectImgs" src={projectSix} alt="project"></img>

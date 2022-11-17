@@ -25,13 +25,13 @@ export default function contactPage() {
                     <a href="https://www.linkedin.com/in/abed-hasan-965497222/" className="logoColor logo-git-lin-contact"><i className="fa fa-linkedin-square" style={styles.icon}></i></a>
 
                 </div>
-                <div className="container mt-5 ">
+                <motion.div className="container mt-5 "  initial={{x:-5000}} animate={{x:0}}>
                     <form className="formContact">
                         <div className="mb-3">
                             <label className="form-label" htmlFor="name">
                                 Name
                             </label>
-                            <input className="form-control" type="text" id="name" required />
+                            <input className="form-control" type="text" id="name" required/>
                         </div>
                         <div className="mb-3">
                             <label className="form-label" htmlFor="email">
@@ -53,7 +53,7 @@ export default function contactPage() {
                         </div>
 
                     </form>
-                </div>
+                </motion.div>
             </div>
         </motion.div>
     );
