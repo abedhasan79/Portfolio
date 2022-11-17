@@ -2,6 +2,7 @@ import React from "react";
 import profileImg from '../images/profile-pic.jpg'
 import '../style.css'
 import { motion } from "framer-motion";
+import AnimatedText from 'react-animated-text-content';
 const styles = {
     mainCard: {
         display: 'flex',
@@ -25,7 +26,7 @@ export default function about() {
         <motion.div className="homeAnimate"
             initial={{ x: -1100 }}
             animate={{ x: 0 }}
-            transition={{ type:'keyframes' }}
+            transition={{ type: 'keyframes' }}
         >
             <div className="about">
                 <div className="my-img">
@@ -37,7 +38,14 @@ export default function about() {
                         <h2 className="aboutMeText"><span className="textAbout">About Me</span></h2>
                     </div>
                     <div>
-                        <p className="about-p-tag">Full Stack Web Developer with a background in Applied
+                        <AnimatedText 
+                            animation={{
+                              ease: 'ease-in-out',
+                            }}
+                            className="about-p-tag"
+                            
+                        >
+                            Full Stack Web Developer with a background in Applied
                             Mathematics and life-long dedication to learning.
                             Currently a student at University of Toronto coding
                             bootcamp. Gaining a vast array of knowledge in many
@@ -50,7 +58,8 @@ export default function about() {
                             applications. Known among staff for strong wit and
                             attention to detail no matter the complexity of the
                             project.
-                        </p>
+                        </AnimatedText>
+                        
                     </div>
                     <div className="logo-git-lin">
                         <a href="https://github.com/abedhasan79" className="logoColor"><i className="fa fa-github" style={styles.icon}></i></a>

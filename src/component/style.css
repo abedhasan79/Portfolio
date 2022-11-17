@@ -21,7 +21,7 @@
     /* background-color: black; */
     background: linear-gradient(rgb(8, 8, 8) 10%, rgb(36, 37, 36) 45%, rgb(27, 5, 5) 100%);
 
-    color: rgb(82, 219, 178);
+    color: rgb(189, 172, 192);
     box-shadow: inset 10px 10px 40px rgb(71, 42, 42);
     border-radius: 10px;
 }
@@ -58,8 +58,8 @@
 }
 
 .about-p-tag {
-    font-weight: bolder;
-    font-size: 20px;
+    /* font-weight: bolder; */
+    font-size: 18px;
     font-family: 'Playfair Display', serif;
 }
 
@@ -120,23 +120,36 @@
     border-radius: 10px;
 }
 
-.myName {
+/* .myName {
+    font-size: 4vh;
+} */
+.nameDiv {
+    margin-bottom: 8vh;
+    font-size: 3vh;
+}
+.nameDiv :nth-child(3){
+    font-size: 6vh;
+}
+.nameDiv :nth-child(5){
+    font-size: 6vh;
+}
+.hiText{
     font-size: 4vh;
 }
-
-.nameLetterAH {
-    font-size: 8vh;
+.fullDev{
+    font-size: 3vh;
 }
+/* .nameLetterAH {
+    font-size: 8vh;
+} */
 
-.nameLetter:hover {
+/* .nameLetter:hover {
     color: rgb(139, 0, 0);
     font-size: 6vh;
     transition: 0.1s;
-}
+} */
 
-.nameDiv {
-    margin-bottom: 5vh;
-}
+
 
 .skillsList {
     font-size: 3vh;

@@ -20,7 +20,7 @@ export default function resume() {
         >
             <div className="resumepage" >
                 <div className="resDown">
-                    <h2 className="profText">Downlao My Resume</h2>
+                    <h2 className="profText">Downlaod My Resume</h2>
                     <a href={resumee} className="logoColor"><i className="fa fa-file" style={styles.icon}></i></a>
                 </div>
 
