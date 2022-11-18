@@ -22,7 +22,7 @@ export default function resume() {
             <div className="resumepage" >
                 <div className="resDown">
                     <h2 className="profText">Downlaod My Resume</h2>
-                    <a href={resumee} className="logoColor">
+                    <a href={resumee} className="logoColor" download>
                         <motion.i className="fa fa-file" style={styles.icon}
                             initial={{ x: 500 }}
                             animate={{ x: 0 }}
