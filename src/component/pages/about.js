@@ -51,8 +51,8 @@ export default function about() {
                         >
                             Full Stack Web Developer with a background in Applied
                             Mathematics and life-long dedication to learning.
-                            Currently a student at University of Toronto coding
-                            bootcamp. Gaining a vast array of knowledge in many
+                            Graduated from University of Toronto coding
+                            bootcamp. Gained a vast array of knowledge in many
                             different front end and back end languages, responsive
                             frameworks, databases, and best code practices. My
                             objective is simply to be the best web developer that
