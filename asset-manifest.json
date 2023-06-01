@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.ebd0a137.css",
-    "main.js": "/portfolio/static/js/main.858c9376.js",
+    "main.css": "/portfolio/static/css/main.896753e5.css",
+    "main.js": "/portfolio/static/js/main.d19f4c2f.js",
     "static/media/projectTwo.png": "/portfolio/static/media/projectTwo.c74d75433cc73d4d53dc.png",
+    "static/media/ambientics.png": "/portfolio/static/media/ambientics.586169f8fa67685c8dee.png",
     "static/media/apollodae.png": "/portfolio/static/media/apollodae.c55acb198a53fc67072f.png",
-    "static/media/projectOne.png": "/portfolio/static/media/projectOne.22839d99bc4eeab27575.png",
     "static/media/profile-pic.jpg": "/portfolio/static/media/profile-pic.7218e707ec64ab76d207.jpg",
-    "static/media/Abed Resume.pdf": "/portfolio/static/media/Abed Resume.35d269afc862aeffee98.pdf",
+    "static/media/Abed Resume.pdf": "/portfolio/static/media/Abed Resume.a89a3082f08ee0583178.pdf",
+    "static/media/pokedex.png": "/portfolio/static/media/pokedex.681d3054a7afea69c9de.png",
     "static/media/backimg2.jpg": "/portfolio/static/media/backimg2.c7db1ae9ca41107736a8.jpg",
     "static/media/projectSix.png": "/portfolio/static/media/projectSix.87b72b170a815e56a64a.png",
     "static/media/projectFive.png": "/portfolio/static/media/projectFive.fb6a0c252beb9ad43a52.png",
-    "static/media/projectThree.png": "/portfolio/static/media/projectThree.c5977809f5977cceb8d6.png",
     "static/media/projectFour.png": "/portfolio/static/media/projectFour.97d80ff0256c36684b3e.png",
     "index.html": "/portfolio/index.html",
-    "main.ebd0a137.css.map": "/portfolio/static/css/main.ebd0a137.css.map",
-    "main.858c9376.js.map": "/portfolio/static/js/main.858c9376.js.map"
+    "main.896753e5.css.map": "/portfolio/static/css/main.896753e5.css.map",
+    "main.d19f4c2f.js.map": "/portfolio/static/js/main.d19f4c2f.js.map"
   },
   "entrypoints": [
-    "static/css/main.ebd0a137.css",
-    "static/js/main.858c9376.js"
+    "static/css/main.896753e5.css",
+    "static/js/main.d19f4c2f.js"
   ]
 }
