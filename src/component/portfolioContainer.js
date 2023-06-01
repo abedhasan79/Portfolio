@@ -38,7 +38,10 @@ export default function PortfolioContainer() {
         <div className='navBar '>
 
             <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
-            {renderPage()}
+            <div className='vh-100 pt-5 mb-5'>
+                {renderPage()}
+            </div>
+
             <footer className="logo-git-lin footer">
 
                 <a href="https://github.com/abedhasan79" className="logoColor"><i className="fa fa-github" style={styles.icon}></i></a>

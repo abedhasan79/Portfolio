@@ -1,9 +1,9 @@
 import React from "react";
 import '../style.css';
 import { motion } from "framer-motion";
-import projectOne from '../images/projectOne.png';
+import projectOne from '../images/pokedex.png';
 import projectTwo from '../images/projectTwo.png';
-import projectThree from '../images/projectThree.png';
+import projectThree from '../images/ambientics.png';
 import projectFour from '../images/projectFour.png';
 import projectFive from '../images/projectFive.png';
 import projectSix from '../images/projectSix.png';
@@ -25,8 +25,21 @@ export default function projectPage() {
             animate={{ x: 0 }}
             transition={{ type: 'keyframes' }}
         >
-            <div className="project">
+            <div className="project vh-100 scrollable-div" >
 
+                <motion.div className="imgContainer"
+                    initial={{ x: -1700 }}
+                    animate={{ x: 0 }}
+                    transition={{ delay: 0.8, duration: 0.5 }}
+                    whileHover={{ x: 10, y: 10 }}
+                >
+                    <img className="projectImgs" src={projectThree} alt="project"></img>
+                    <div className="middle">
+                        <a href="https://ambientics.herokuapp.com/" className="logoColor"><i className="fa fa-internet-explorer" style={styles.icon}></i></a>
+                        <h6>Ambientics Environmental</h6>
+                    </div>
+                </motion.div>
+                
                 <motion.div className="imgContainer"
                     initial={{ x: -1700 }}
                     animate={{ x: 0 }}
@@ -63,40 +76,11 @@ export default function projectPage() {
                 >
                     <img className="projectImgs" src={projectOne} alt="project"></img>
                     <div className="middle">
-                        <a href="https://abedhasan79.github.io/Learning-My-Way/" className="logoColor"><i className="fa fa-internet-explorer" style={styles.icon}></i></a>
-                        <a href="https://github.com/abedhasan79/Learning-My-Way" className="logoColor"><i className="fa fa-github" style={styles.icon}></i></a>
-                        <h6>LearningMyWay</h6>
+                        <a href="https://abedhasan79.github.io/pokedex/" className="logoColor"><i className="fa fa-internet-explorer" style={styles.icon}></i></a>
+                        <a href="https://github.com/abedhasan79/pokedex" className="logoColor"><i className="fa fa-github" style={styles.icon}></i></a>
+                        <h6>Pokedex</h6>
                     </div>
                 </motion.div>
-
-                <motion.div className="imgContainer"
-                    initial={{ x: -1700 }}
-                    animate={{ x: 0 }}
-                    transition={{ delay: 0.8, duration: 0.5 }}
-                    whileHover={{ x: 10, y: 10 }}
-                >
-                    <img className="projectImgs" src={projectThree} alt="project"></img>
-                    <div className="middle">
-                        <a href="https://the-tech-blog-079.herokuapp.com/" className="logoColor"><i className="fa fa-internet-explorer" style={styles.icon}></i></a>
-                        <a href="https://github.com/abedhasan79/The_Tech_Blog" className="logoColor"><i className="fa fa-github" style={styles.icon}></i></a>
-                        <h6>Tech-Blog</h6>
-                    </div>
-                </motion.div>
-
-                <motion.div className="imgContainer"
-                    initial={{ x: -1700 }}
-                    animate={{ x: 0 }}
-                    transition={{ delay: 1, duration: 0.5 }}
-                    whileHover={{ x: 10, y: 10 }}
-                >
-                    <img className="projectImgs" src={projectFour} alt="project"></img>
-                    <div className="middle">
-                        <a href="https://text-editor-79.herokuapp.com/" className="logoColor"><i className="fa fa-internet-explorer" style={styles.icon}></i></a>
-                        <a href="https://github.com/abedhasan79/Text-Editor" className="logoColor"><i className="fa fa-github" style={styles.icon}></i></a>
-                        <h6>J.A.T.E</h6>
-                    </div>
-                </motion.div>
-
 
                 <motion.div className="imgContainer"
                     initial={{ x: -1700 }}

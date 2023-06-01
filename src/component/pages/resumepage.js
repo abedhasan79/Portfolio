@@ -45,6 +45,8 @@ export default function resume() {
                             <li>JQuery</li>
                             <li>Responsive Design</li>
                             <li>React</li>
+                            <li>Next.Js</li>
+                            <li>TypeScript</li>
                             <li>Bootstrap</li>
                         </motion.ul>
                     </div>
@@ -65,6 +67,8 @@ export default function resume() {
                             <li>REST</li>
                             <li>GraphQL</li>
                             <li>Mern State</li>
+                            <li>Java</li>
+                            <li>Python</li>
                         </motion.ul>
                     </div>
                 </div>

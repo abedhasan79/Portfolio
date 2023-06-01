@@ -127,18 +127,23 @@
     margin-bottom: 8vh;
     font-size: 3vh;
 }
-.nameDiv :nth-child(3){
+
+.nameDiv :nth-child(3) {
     font-size: 6vh;
 }
-.nameDiv :nth-child(5){
+
+.nameDiv :nth-child(5) {
     font-size: 6vh;
 }
-.hiText{
+
+.hiText {
     font-size: 4vh;
 }
-.fullDev{
+
+.fullDev {
     font-size: 3vh;
 }
+
 /* .nameLetterAH {
     font-size: 8vh;
 } */
@@ -385,3 +390,24 @@
 }
 
 /* ............. */
+
+.scrollable-div {
+    overflow: auto;
+}
+
+.scrollable-div::-webkit-scrollbar {
+    width: 0.5em;
+    display: none;
+}
+
+/* .scrollable-div::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.scrollable-div::-webkit-scrollbar-thumb {
+    background-color: #888;
+}
+
+.scrollable-div::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+} */
