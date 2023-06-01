@@ -79,25 +79,29 @@ export default function ContactPage() {
                             <label className="form-label" htmlFor="name">
                                 Name
                             </label>
-                            <input className="form-control" type="text" id="name" required />
+                            <input value={name}
+                                onChange={(e) => setName(e.target.value)} className="form-control" type="text" id="name" required />
                         </div>
                         <div className="mb-3">
                             <label className="form-label" htmlFor="email">
                                 Email
                             </label>
-                            <input className="form-control" type="email" id="email" required />
+                            <input value={email}
+                                onChange={(e) => setEmail(e.target.value)} className="form-control" type="email" id="email" required />
                         </div>
                         <div className="mb-3">
                             <label className="form-label" htmlFor="subject">
                                 Subject
                             </label>
-                            <input className="form-control" type="text" id="subject" required />
+                            <input value={subject}
+                                onChange={(e) => setSubject(e.target.value)} className="form-control" type="text" id="subject" required />
                         </div>
                         <div className="mb-3">
                             <label className="form-label" htmlFor="message">
                                 Message
                             </label>
-                            <textarea className="form-control" id="message" required />
+                            <textarea value={message}
+                                onChange={(e) => setMessage(e.target.value)} className="form-control" id="message" required />
                         </div>
 
                         <div className="frmbtn mb-3">
